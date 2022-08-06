@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const list = document.querySelector('.gallery');
-const markup = images
-  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="1260"></li>`)
-  .join('');
+const markup = images.map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`).join('');
 list.insertAdjacentHTML('beforeend', markup);
+list.style.display = 'flex';
+list.style.flexDirection = 'column';
