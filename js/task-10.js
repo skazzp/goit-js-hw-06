@@ -13,7 +13,11 @@ createBtn.addEventListener('click', () => {
   let size = 30;
   for (let i = 0; i < divCount; i += 1) {
     let color = getRandomHexColor();
-    const markup = `<div class="div">${color}</div>`;
-    boxesDiv.insertAdjacentHTML('beforeend', markup);
+    // const item = document.createElement("button");
+    //     item.type = "button";
+    //     item.dataset.color = color;
+    //     item.style.backgroundColor = color;
+    //     item.classList.add("item");
+    //     items.push(item);
   }
 });
